@@ -3,6 +3,7 @@ package app
 import (
 	"context"
 	"encoding/json"
+	"fmt"
 	"io"
 	"net/http"
 	"os"
@@ -46,6 +47,7 @@ import (
 )
 
 func Init() {
+	fmt.Println("testing staticmajor workflow")
 	userHomeDir, err := os.UserHomeDir()
 	if err != nil {
 		panic(err)
